@@ -1,0 +1,66 @@
+{
+  "_from": "@deepstream/storage-elasticsearch",
+  "_id": "@deepstream/storage-elasticsearch@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-AvusMYRB+GmvJk73WTKWXU1Ghpngm+fiXdSSh73dKTjwSCHQ1IrEE/uBK0/FGfuCm2B+7IhhOvgCLJDH3eZ63w==",
+  "_location": "/@deepstream/storage-elasticsearch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/storage-elasticsearch",
+    "name": "@deepstream/storage-elasticsearch",
+    "escapedName": "@deepstream%2fstorage-elasticsearch",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/storage-elasticsearch/-/storage-elasticsearch-2.0.0.tgz",
+  "_shasum": "06361bb6df06accb791df493183b1b3dba09d5ae",
+  "_spec": "@deepstream/storage-elasticsearch",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-storage-elasticsearch/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "elasticsearch": "^15.4.1"
+  },
+  "deprecated": false,
+  "description": "A storage connector for deepstream and elasticsearch",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "mocha": "^6.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/deepstreamIO/deepstream.io-storage-elasticsearch#readme",
+  "keywords": [
+    "deepstream.io",
+    "elasticsearch"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/connector.js",
+  "name": "@deepstream/storage-elasticsearch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-storage-elasticsearch.git"
+  },
+  "scripts": {
+    "ci": "npm run coverage",
+    "coverage": "nyc mocha src/",
+    "docker": "docker run -p 9200:9200 -p 9300:9300 -e \"discovery.type=single-node\" docker.elastic.co/elasticsearch/elasticsearch:6.7.1",
+    "test": "mocha src/"
+  },
+  "version": "2.0.0"
+}

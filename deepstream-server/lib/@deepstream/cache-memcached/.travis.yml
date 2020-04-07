@@ -1,0 +1,40 @@
+env:
+  global:
+    - CXX=g++-4.8
+    - MEMCACHED_URL=127.0.0.1:11211
+
+services:
+  - memcached
+
+# Do not insert any code under here without making sures it's in publishingtest first
+language: node_js
+
+plugins:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+
+node_js:
+  - '10'
+
+script:
+  - npm run ci
+
+deploy:
+  - provider: npm
+    email: "info@deepstream.io"
+    api_key: ${NPM_TOKEN}
+    skip_cleanup: true
+    on:
+      tags: true
+      node_js: '10'
+      condition: $TRAVIS_OS_NAME = linux
+
+after_deploy:
+  - curl -o test.sh -L https://raw.githubusercontent.com/deepstreamIO/deepstream.io/v4/scripts/connector/test-connector.sh
+  - bash test.sh
+
+after_script:
+  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

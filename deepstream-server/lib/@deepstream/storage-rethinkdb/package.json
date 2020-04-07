@@ -1,0 +1,70 @@
+{
+  "_from": "@deepstream/storage-rethinkdb",
+  "_id": "@deepstream/storage-rethinkdb@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YpF0f9NXvw9jrOPZ+nGee1ba1SM1WCsWa1TFyHU2sB19UC9J/IJ7tQtPjQzUKweMhIWxbHx8LKis6Ka0bg1mPg==",
+  "_location": "/@deepstream/storage-rethinkdb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/storage-rethinkdb",
+    "name": "@deepstream/storage-rethinkdb",
+    "escapedName": "@deepstream%2fstorage-rethinkdb",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/storage-rethinkdb/-/storage-rethinkdb-2.0.0.tgz",
+  "_shasum": "e2d3d2caa87c62d97e99d83c399927ee461a8990",
+  "_spec": "@deepstream/storage-rethinkdb",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-storage-rethinkdb/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@deepstream/types": "^1.0.0",
+    "rethinkdb": "2.3.3"
+  },
+  "deprecated": false,
+  "description": "Connects deepstream.io to rethinkdb",
+  "devDependencies": {
+    "@deepstream/protobuf": "^1.0.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "@types/rethinkdb": "^2.3.14",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "mocha": "^6.2.0",
+    "nyc": "^13.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  },
+  "homepage": "http://deepstream.io",
+  "license": "Apache-2.0",
+  "main": "dist/src/connector.js",
+  "name": "@deepstream/storage-rethinkdb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-storage-rethinkdb.git"
+  },
+  "scripts": {
+    "ci": "npm run coverage",
+    "coverage": "nyc mocha --exit",
+    "docker": "docker run -p 28015:28015 rethinkdb:2.3.6",
+    "lint": "tslint --project .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha --opts mocha.opts 'test/*.spec.ts'",
+    "tsc": "tsc"
+  },
+  "version": "2.0.0"
+}

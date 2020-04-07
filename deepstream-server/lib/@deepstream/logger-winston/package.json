@@ -1,0 +1,64 @@
+{
+  "_from": "@deepstream/logger-winston",
+  "_id": "@deepstream/logger-winston@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ytV6Xf9W85v5qccbytK4nVunZBaLNxoXU5iiJNso/G6GGZLSMT7zfbRMHy6r3qGbh6eutt7/GR+EDhxuB6+n9w==",
+  "_location": "/@deepstream/logger-winston",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/logger-winston",
+    "name": "@deepstream/logger-winston",
+    "escapedName": "@deepstream%2flogger-winston",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/logger-winston/-/logger-winston-2.0.0.tgz",
+  "_shasum": "183b05516168f19d575e07a2998963652d45711a",
+  "_spec": "@deepstream/logger-winston",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-logger-winston/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash.merge": "^4.6.1",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "deprecated": false,
+  "description": "Winston Logger for deepstream.io",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "coveralls": "^3.0.0",
+    "deepstream.io": "latest",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/deepstreamIO/deepstream.io-logger-winston#readme",
+  "license": "Apache-2.0",
+  "main": "src/logger.js",
+  "name": "@deepstream/logger-winston",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-logger-winston.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "version": "2.0.0"
+}

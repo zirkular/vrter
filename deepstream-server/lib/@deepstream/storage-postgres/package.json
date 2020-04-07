@@ -1,0 +1,69 @@
+{
+  "_from": "@deepstream/storage-postgres",
+  "_id": "@deepstream/storage-postgres@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-9JO+OlBXSetUjfxbIqM5Y2QsAIXW2U3qMl6F3eFnp5CcFrObuUt0kC5AweiqmpFqDzqa3ExAlTpFq6suyPBDAA==",
+  "_location": "/@deepstream/storage-postgres",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/storage-postgres",
+    "name": "@deepstream/storage-postgres",
+    "escapedName": "@deepstream%2fstorage-postgres",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/storage-postgres/-/storage-postgres-2.0.0.tgz",
+  "_shasum": "03bba6b39d3e6bfdf380b9474244922492628563",
+  "_spec": "@deepstream/storage-postgres",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-storage-postgres/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "pg": "^7.9.0",
+    "pg-escape": "^0.2.0"
+  },
+  "deprecated": false,
+  "description": "A deepstream.io storage connector for use with deepstream",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2"
+  },
+  "homepage": "https://deepstream.io/tutorials/integrations/db-postgres/",
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "realtime search",
+    "realtime",
+    "deepstream.io"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/connector.js",
+  "name": "@deepstream/storage-postgres",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-storage-postgres.git"
+  },
+  "scripts": {
+    "docker": "docker run -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword postgres",
+    "test": "mocha",
+    "watch": "mocha -w"
+  },
+  "version": "2.0.0"
+}

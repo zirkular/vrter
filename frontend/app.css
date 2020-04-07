@@ -1,0 +1,52 @@
+/* 086788-07a0c3-f0c808-fff1d0-dd1c1a */
+
+#overlay {
+    font-family: "Source Code Pro";
+    /* background-color: #086788; */
+    background: url("img/hologram-3442229_1920.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.bg-pad {
+    padding: 2% 3%;
+}
+
+.bg-red {
+    background-color: lightpink;
+    display: block;
+}
+
+#form {
+    width: 30%;
+    margin: 15% auto;
+    /* background: #f0c808; */
+    background-image: linear-gradient(33deg, #7d44a4, #85c895);
+    padding: 2% 3%;
+    border-radius: 1px;
+    border: solid #efebec;
+}
+
+#form label {
+    width: 25%;
+    float: left;
+    color: #efebec;
+}
+
+#form input,
+#form button {
+    font-family: "Source Code Pro";
+    width: 100%;
+    font-size: 20px;
+    padding: 2%;
+}
+
+#form button {
+    margin-top: 20pt;
+}
+
+color-bright {
+    color: #efebec;
+}

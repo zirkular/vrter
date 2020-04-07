@@ -1,0 +1,66 @@
+# Username
+erik:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"
+
+franzi:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"
+  
+felix:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"
+
+steph:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"
+
+marcus:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"
+
+lydia:
+  # Password hash ( hash options passed within config.yml )
+  # This hash represents clear text "password" with default options
+  password: "Q9OYaSyyJOC7ksy1qw2KDiyVYP14/uV7bRjzATmY+WI=M76+2inGSEIQTWEuMpB+aA=="
+  # Server data is used within your permission handler
+  serverData:
+    someOptional: "auth-data"
+  # Client data is sent to the client on login
+  clientData:
+    favouriteColor: "red"

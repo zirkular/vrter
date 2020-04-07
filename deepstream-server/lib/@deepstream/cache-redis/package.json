@@ -1,0 +1,71 @@
+{
+  "_from": "@deepstream/cache-redis",
+  "_id": "@deepstream/cache-redis@2.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-1IjGhZd1pOGgtuVAExlin8H6bW11hVdS6EzykHg2+8LpjfjZ+w+nI1cQ0ITRPSdMUH8vnRyio/qYF0lRqhhNtg==",
+  "_location": "/@deepstream/cache-redis",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/cache-redis",
+    "name": "@deepstream/cache-redis",
+    "escapedName": "@deepstream%2fcache-redis",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/cache-redis/-/cache-redis-2.0.5.tgz",
+  "_shasum": "b86f72500d156b1ce4ecb6ab3364240c72a25d87",
+  "_spec": "@deepstream/cache-redis",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-cache-redis/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@deepstream/types": "^1.0.3",
+    "ioredis": "^4.14.1"
+  },
+  "deprecated": false,
+  "description": "Redis cache connector for deepstream.io",
+  "devDependencies": {
+    "@deepstream/protobuf": "^1.0.1",
+    "@types/chai": "^4.2.3",
+    "@types/ioredis": "^4.0.17",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
+    "mocha": "^6.2.0",
+    "nyc": "^13.3.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "homepage": "http://deepstream.io",
+  "license": "Apache-2.0",
+  "main": "dist/src/connector.js",
+  "name": "@deepstream/cache-redis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-cache-redis.git"
+  },
+  "scripts": {
+    "ci": "npm run coverage",
+    "coverage": "nyc mocha src/",
+    "docker": "docker start -p 6379:6379 redis",
+    "lint": "tslint --project .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha --opts mocha.opts 'src/*.spec.ts'",
+    "tsc": "tsc"
+  },
+  "version": "2.0.5"
+}

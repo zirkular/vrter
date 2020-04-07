@@ -1,0 +1,72 @@
+{
+  "_from": "@deepstream/storage-mongodb",
+  "_id": "@deepstream/storage-mongodb@2.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-TwyppmMSLCRymxsHTRF72Z8Dpd0i3lJ28YeLLZ0e/h7afO4Av/buPIdoOL/pklsL022x2mgH/vk2u8ppBILKjw==",
+  "_location": "/@deepstream/storage-mongodb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@deepstream/storage-mongodb",
+    "name": "@deepstream/storage-mongodb",
+    "escapedName": "@deepstream%2fstorage-mongodb",
+    "scope": "@deepstream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@deepstream/storage-mongodb/-/storage-mongodb-2.0.5.tgz",
+  "_shasum": "a7c4472721de296d8dd548943a9fe67dafb0f956",
+  "_spec": "@deepstream/storage-mongodb",
+  "_where": "/home/travis/build/deepstreamIO/deepstream.io/build/5.0.12/deepstream.io/lib",
+  "author": {
+    "name": "deepstreamHub GmbH"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-storage-mongodb/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@deepstream/types": "^2.0.7",
+    "mongodb": "~3.3"
+  },
+  "deprecated": false,
+  "description": "Connects deepstream.io to mongodb",
+  "devDependencies": {
+    "@deepstream/protobuf": "^1.0.1",
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "@types/mongodb": "^3.3.11",
+    "@types/node": "^12.12.12",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.8",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "homepage": "http://deepstream.io",
+  "license": "Apache-2.0",
+  "main": "dist/src/connector.js",
+  "name": "@deepstream/storage-mongodb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepstreamIO/deepstream.io-storage-mongodb.git"
+  },
+  "scripts": {
+    "ci": "npm run coverage",
+    "coverage": "nyc mocha --exit",
+    "docker": "docker run -p 27017:27017 mongo",
+    "lint": "tslint --project .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha --opts mocha.opts 'test/*.spec.ts'",
+    "tsc": "tsc"
+  },
+  "version": "2.0.5"
+}

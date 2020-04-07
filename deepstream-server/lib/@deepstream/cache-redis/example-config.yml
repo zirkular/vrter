@@ -1,0 +1,19 @@
+cache:
+  name: redis
+  options:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+
+# Using with a cluster
+# cache:
+#   name: redis
+#   options:
+#     nodes:
+#       - host: <String>
+#         port: <Number>
+#         password: <String>
+#       - host: <String>
+#         port: <Number>
+#     maxRedirections: 16
+#     redisOptions:
+#       password: 'fallback-password'

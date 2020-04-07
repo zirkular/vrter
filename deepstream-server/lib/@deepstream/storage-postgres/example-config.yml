@@ -1,0 +1,22 @@
+plugins:
+  storage:
+    name: postgres
+    options:
+      user: some-user
+      database: some-database
+      password: some-password
+      host: localhost
+      port: 5432
+      schema: ds
+      table:
+        defaultName: default
+        prefix: ds
+      max: 10
+      idleTimeoutMillis: 30000
+      writeInterval: 200
+      notifications:
+        CREATE_TABLE: true
+        DESTROY_TABLE: true
+        INSERT: true
+        UPDATE: false
+        DELETE: true
