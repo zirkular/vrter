@@ -19,44 +19,62 @@
     <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
     <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
     <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
-    <a-asset-item id="stageModel" src="https://raw.githubusercontent.com/zirkular/vrter/master/frontend/3d/Stage_2903.gltf"></a-asset-item>
+    <a-asset-item id="stageModel" src="https://raw.githubusercontent.com/zirkular/vrter/master/frontend/3d/Stage_360_05.gltf"></a-asset-item>
     <a-mixin id="eye" geometry="primitive: sphere; radius: 0.2" material="shader: flat; side: double; color: #FFF"></a-mixin>
     <a-mixin id="pupil" geometry="primitive: sphere; radius: 0.05" material="shader: flat; side: double; color: #222"></a-mixin>
     <a-mixin id="arm" geometry="primitive: box; depth: 0.2; height: 1.5; width: 0.2" material="color: #222; shader: flat"></a-mixin>
-    <video id="teaserVideo" autoplay muted loop="true" src="https://raw.githubusercontent.com/zirkular/vrter/master/frontend/video/Teaser.mp4"></video>
+    <video crossorigin="anonymous" id="teaserVideo" autoplay loop="true" muted src="https://raw.githubusercontent.com/zirkular/vrter/master/frontend/video/Teaser.mp4"></video>
   </a-assets>
 
   <!--custom entities-->
 
   <a-entity position="-3 -1 -6" rotation="5 0 0">
-    <a-entity
+    <!-- <a-entity
           rotation="0 0 5"
           position="0 2 0.2"
           text-geometry="value: Costa Compagnie's; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
           material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;">
-    </a-entity>
+    </a-entity> -->
 
-    <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Virtual Studio; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+    <!-- <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Virtual Studio; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity> -->
 
   </a-entity>
 
-  <a-entity
-        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
-  </a-entity>
 
-  <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
-  <a-entity light="color: ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+  <a-entity light="color: #ccccff; intensity: 1;" visible="" position="2 3 1.5"></a-entity>
+  <a-entity light="color: #ccccff; intensity: 1;" visible="" position="-2 3 1.5"></a-entity>
+  <a-entity light="color: #ccccff; intensity: 1;" visible="" position="-2 3 -10"></a-entity>
+  <!-- <a-entity light="color: ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
   <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
-  <a-entity light="color: white; type: ambient;"></a-entity>
+  <a-entity light="color:  #ff0080;  groundColor:  #ff0080" position="-3 3 -2"></a-entity> -->
 
-  <a-entity gltf-model="#stageModel"></a-entity>
+  <a-entity gltf-model="#stageModel" position="-6 -1.8 -23" rotation="0 -90 0" material="color: #001833;"></a-entity>
 
-  <a-sky src="#sky" rotation="0 -90 0"></a-sky>
-  <a-entity position="0 -5 0"
+
+  <a-circle color="red" radius="1" position="0 0 -10" rotation="0 0 0"></a-circle>
+  
+  <!-- <a-sky src="#sky" rotation="0 -90 0"></a-sky> -->
+  <!-- <a-entity position="0 -5 0"
         geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
+        material="color: #001833; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
+  </a-entity> -->
+
+  <a-entity position="0 0 -3.8"
+        geometry="primitive: plane; width: 7.3; height: 4.1;" rotation="0 0 0"
+        material="src: #teaserVideo; transparent: false; metalness:0.0; roughness: 1.0;">
   </a-entity>
+  <a-entity position="0 0 -3.81"
+        geometry="primitive: plane; width: 7.3; height: 4.1;" rotation="0 -180 0"
+        material="color: white; transparent: false; metalness:0.0; roughness: 1.0;">
+  </a-entity>
+
+  <a-sky material="color: #120F24" rotation="0 -90 0"></a-sky>
+  <a-entity position="0 -1.8 0"
+    geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+    material="color: #001833; repeat: 10000 10000; transparent: false; metalness:0.0; roughness: 1.0;">
+  </a-entity>
+
+
   <!--camera entity-->
   <a-entity>
     <a-entity camera look-controls wasd-controls id="user-cam">
