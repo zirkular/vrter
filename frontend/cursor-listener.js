@@ -1,11 +1,20 @@
 AFRAME.registerComponent('cursor-listener', {
     init: function () {
-      var lastIndex = -1;
-      var COLORS = ['red', 'green', 'blue'];
-      this.el.addEventListener('click', function (evt) {
-        lastIndex = (lastIndex + 1) % COLORS.length;
-        this.setAttribute('material', 'color', COLORS[lastIndex]);
-        console.log('I was clicked at: ', evt.detail.intersection.point);
-      });
+        this.onClick = this.onClick.bind(this);
+    },
+    play: function () {
+        this.el.addEventListener('click', this.onClick);
+    },
+    pause: function () {
+        this.el.removeEventListener('click', this.onClick);
+    },
+    onClick: function (evt) {
+        // location.href='https://google.com'
+        window.open(
+            'https://vimeo.com/403330533',
+            '_blank' // <- This is what makes it open in a new window.
+        );
     }
+  
+    
   });
